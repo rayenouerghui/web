@@ -8,9 +8,6 @@ const PORT = process.env.PORT || 3000; // Use Render's port if available
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-    res.send('Server is running!');
-});
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
