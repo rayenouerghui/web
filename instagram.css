@@ -1,0 +1,166 @@
+body {
+    background: #fafafa;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 350px;
+    margin: 40px auto;
+    padding: 40px 40px 20px 40px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-main {
+    width: 175px;
+    margin: 30px auto 24px auto;
+    display: block;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-form input {
+    margin-bottom: 8px;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background: #fafafa;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.login-form input:focus {
+    border: 1px solid #b2b2b2;
+    background: #fff;
+}
+
+.password-row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-row input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 40px; /* space for the eye button */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #b3b3b3;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eye-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+.forgot-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.forgot-link {
+    color: #3897f0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login-btn {
+    background: #4cb5f9;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background: #1877f2;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 18px 0;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.or {
+    margin: 0 18px;
+    color: #8e8e8e;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.fb-btn {
+    background: none;
+    border: none;
+    color: #385185;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.fb-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.signup-box {
+    margin-top: 74px;
+    text-align: center;
+    font-size: 15px;
+    color: #262626;
+}
+
+.signup-link {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
